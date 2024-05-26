@@ -33,9 +33,9 @@ jobs:
 
       - name: Run tests
         run: npm test
-      
+
       - name: Run linting
         run: npm run lint
-      
+
       - name: Run style check
         run: npm run style:check
