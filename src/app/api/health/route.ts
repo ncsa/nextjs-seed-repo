@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
 export interface HealthMessageResponse {
-  message: string;
+  status: string;
 }
 
 export async function GET(): Promise<NextResponse<HealthMessageResponse>> {
-  return NextResponse.json({ message: 'Healthy v1!' });
+  return NextResponse.json({ status: 'ok' });
 }

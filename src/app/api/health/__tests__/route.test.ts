@@ -11,6 +11,6 @@ describe('Health Check API Route', () => {
     const json = (await response.json()) as HealthMessageResponse;
 
     expect(response.status).toBe(200);
-    expect(json).toEqual({ message: 'Healthy v1!' });
+    expect(json).toEqual({ status: 'ok' });
   });
 });
