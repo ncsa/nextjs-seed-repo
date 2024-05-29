@@ -26,16 +26,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Run build
-        run: npm run build
+        run: bun run build
 
       - name: Run tests
-        run: npm test
+        run: bun test
 
       - name: Run linting
-        run: npm run lint
+        run: bun run lint
 
       - name: Run style check
-        run: npm run style:check
+        run: bun run style:check
